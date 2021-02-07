@@ -1,0 +1,168 @@
+ $font-ppal:'Open Sans Condensed', sans-serif;
+$font-sec:'Open Sans', sans-serif;;
+$orange: #fb5e27;
+$font-color:#1f273c;
+
+.video{
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -2;
+}
+.bg{
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    background-color: $font-color;
+    opacity: 0.65;
+}
+
+.header{
+    .header-info{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: $font-color;
+        opacity: 0.97;
+        width: 100%;
+        height: 100px;
+        .logo{
+            width: 85px;
+            height: 71px;
+            margin-left: -100px;
+        }
+        .opening-hour{
+            display: flex;
+            flex-direction: column;
+            margin-top: 5px;
+            margin-left: -180px;
+            .title{
+                font-family: $font-ppal;
+                color: $orange;
+                font-weight: 700;
+                font-size: 14px;
+                margin-bottom: 0px;
+            }
+            .info{
+                color: #fff;
+                font-family: $font-ppal;
+                font-size: 14px;
+            }
+        }
+        .follow{
+            display: flex;
+            flex-direction: column;
+            margin-top: -13px;
+            margin-right: -190px;
+            .title{
+                font-family: $font-ppal;
+                color: $orange;
+                font-weight: 700;
+                font-size: 14px;
+                margin-bottom: 2px;
+            }
+            .icons{
+                display: flex;
+                justify-content: space-between;
+                width: 100px;
+                
+            }
+        }
+        .call{
+            display: flex;
+            flex-direction: column;
+            margin-top: 5px;
+            margin-right: -100px;
+            .title{
+                font-family: $font-ppal;
+                color: $orange;
+                font-weight: 700;
+                font-size: 14px;
+                margin-bottom: 0px;
+                span{
+                    color: #fff;
+                }
+            }
+            .info{
+                color: #fff;
+                font-family: $font-ppal;
+                font-size: 14px;
+            }
+        }
+        &:hover{
+            cursor: default;
+        }
+        
+    }
+    .menu{
+        background-color: #fff;
+        width: 100%;
+        height: 45px;
+        .container-menu{
+            display: flex;
+            justify-content: space-between;
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            .nav-option{
+                font-family: $font-sec;
+                font-weight: 400;
+                color: $font-color;
+                letter-spacing: -1px;
+                display: block;
+                height: 36px;
+                padding-left: 1px;
+                padding-right: 1px;
+                margin-top: 9px;
+                &:hover{
+                    cursor: pointer;
+                    border-bottom: 4px solid $orange;
+                    color: $orange;
+                }
+            }
+        }
+        
+    }
+}
+
+main{
+    display: flex;
+    width: 73%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .left{
+        width: 60%;
+        h1{
+            color: #fff;
+            font-weight: bold;
+            font-family: $font-ppal;
+            font-size: 65px;
+            margin-top: 115px;
+            margin-bottom: 20px;
+        }
+        .line{
+            display: block;
+            width: 55px;
+            height: 9px;
+            background-color: $orange;
+            margin-bottom: 5px;
+        }
+        h3{
+            font-family: $font-ppal;
+            font-weight: bold;
+            color: #fff;
+            font-size: 24px;
+        }
+    }
+    .right{
+        width: 40%;
+    }
+}
