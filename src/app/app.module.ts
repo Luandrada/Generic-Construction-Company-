@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormReservationComponent } from './principal/form-reservation/form-reservation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    FormReservationComponent
   ],
   imports: [
     BrowserModule,
