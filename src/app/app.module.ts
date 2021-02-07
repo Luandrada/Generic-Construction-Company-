@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormReservationComponent } from './principal/form-reservation/form-reservation.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrincipalComponent,
-    FormReservationComponent
+    FormReservationComponent,
+    WelcomeComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
