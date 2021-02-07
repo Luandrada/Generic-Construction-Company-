@@ -14,11 +14,98 @@ $font-color:#1f273c;
         width: 70%;
         display: flex;
         justify-content: space-between;
-        border: 1px solid red;
         .left{
             width: 55%;
-            border: 1px solid blue;
             padding-left: 40px;
+            padding-right: 50px;
+            .about{
+                color: $orange;
+                font-family: $font-sec;
+                font-weight: 400;
+                letter-spacing: 0px;
+                font-size: 13px;
+                display: block;
+                margin-bottom: -6px;
+                &:hover{
+                    cursor: default;
+                }
+            }
+            h2{
+                font-family: $font-ppal;
+                font-weight: 700;
+                color: $font-color;
+                font-size: 42px;
+                margin-bottom: 20px;
+                &:hover{
+                    cursor: default;
+                }
+            }
+            .subtitle{
+                font-family: $font-ppal;
+                font-weight: 700;
+                color: $font-color;
+                margin-bottom: 30px;
+                font-size: 15px;
+                &:hover{
+                    cursor: default;
+                }
+            }
+            .cont-buttons{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                .change{
+                    width: 32%;
+                    font-family: $font-ppal;
+                    font-weight: bold;
+                    color: $font-color;
+                    background-color: #fff;
+                    &:focus{
+                        outline: none;
+                        border: none;
+                        box-shadow: none;
+                    }
+                }
+                .selected{
+                    color: #fff;
+                    background-color: $orange;
+                }
+            }
+            .description{
+                border-radius: 5px;
+                border: 1px solid rgb(235, 235, 235);
+                margin-top: 5px;
+                padding: 20px 15px 15px 15px;
+                p{
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: $font-color;
+                   font-size: 13px;
+                }
+                &:hover{
+                    cursor: default;
+                }
+            }
+            .cont-btn{
+                display: flex;
+                justify-content: center;
+                .contact{
+                    color: #fff ;
+                    background-color:#1c2130 ;
+                    margin-top: 45px;
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                    &:focus{
+                        outline: none;
+                        border: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+            
+        }
+        .right{
+            width: 40%;
+            padding-left: 35px;
             .about{
                 color: $orange;
                 font-family: $font-sec;
@@ -32,56 +119,74 @@ $font-color:#1f273c;
                 font-family: $font-ppal;
                 font-weight: 700;
                 color: $font-color;
-                font-size: 44px;
+                font-size: 42px;
                 margin-bottom: 20px;
             }
-            .subtitle{
-                font-family: $font-ppal;
-                font-weight: 700;
-                color: $font-color;
-                margin-bottom: 30px;
-                font-size: 15px;
-            }
-            .cont-buttons{
+            .container-cards{
                 display: flex;
-                justify-content: space-between;
-                margin-bottom: 10px;
-                .change{
-                    width: 32%;
+                flex-direction: column;
+                width: 77%;
+                border: none;
+                .card-individual{
+                    height: 140px;
+                    width: 100%;
+                    display: grid;
                     font-family: $font-ppal;
-                    font-weight: bold;
-                    color: $font-color;
-                    background-color: #fff;
+                    color: #fff;
+                    border: none;
+                    padding: 20px 35px 25px 20px;
+                    grid-template-areas: 'icon title'
+                                            'icon text';
+                    .icon{
+                        grid-area: icon;
+                        width:42px ;
+                        height: 42px;
+                        position: relative;
+                        margin-top: -10px;
+                        .big-circle{
+                            width: 40px;
+                            height: 40px;
+                            border: 1px dotted #fff;
+                            border-radius: 100%;
+                            position: absolute;
+                            
+                        }
+                        .sm-circle{
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 100%;
+                            position: absolute;
+                            z-index: 2;
+                            bottom: -1px;
+                            left: -2px;
+                        }
+                        .fa-wrench,.fa-drafting-compass,.fa-paint-roller{
+                            font-size: 1.8em;
+                            color: $font-color;
+                            position: absolute;
+                            z-index: 3;
+                            bottom: 4px;
+                        }
+                    }
+                    .title{
+                        grid-area: title;
+                        font-weight: bold;
+                        font-family: $font-sec;
+                        font-size: 14px;
+                        line-height: 14px;
+                    }
+                    .text{
+                        grid-area: text;
+                        font-family: $font-sec;
+                        font-size: 13px;
+                        line-height: 20px;
+                        margin-top: -5px;
+                    }
                 }
             }
-            .description{
-                border-radius: 4px;
-                border: 1px solid rgb(204, 200, 200);
-                //border: 1px solid black;
-                margin-top: 5px;
-                padding: 20px 15px 15px 15px;
-                p{
-                    font-family: $font-sec;
-                    color: $font-color;
-                   font-size: 14px;
-                }
+            &:hover{
+                cursor: default;
             }
-            .cont-btn{
-                display: flex;
-                justify-content: center;
-                .contact{
-                    color: #fff ;
-                    background-color:#1c2130 ;
-                    margin-top: 60px;
-            
-                    padding-top: 3px;
-                    padding-bottom: 3px;
-                }
-            }
-            
-        }
-        .right{
-            width: 40%;
         }
     }
 }

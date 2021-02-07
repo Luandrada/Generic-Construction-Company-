@@ -8,9 +8,9 @@
             <p class="subtitle">We are a unique company dedicated to our clients</p>
     
             <div class="cont-buttons">
-                <button class="btn change">Our Mission</button>
-                <button class="btn change">Our Vision</button>
-                <button class="btn change">Our Value</button>
+                <button class="btn change selected" (click)="changeText(1)" (blur)="noBorder()">Our Mission</button>
+                <button class="btn change" (click)="changeText(2)" (blur)="noBorder()">Our Vision</button>
+                <button class="btn change" (click)="changeText(3)" (blur)="noBorder()">Our Value</button>
             </div>
             <div class="description">
                 <p id="description-text">
@@ -18,6 +18,7 @@
                     a residential approach, where we generate creative, authentic and <br>
                     innovative solutions, achieving results that exceed the expectations of <br>
                     each client.
+
                 </p>
             </div>
             <div class="cont-btn">
@@ -26,7 +27,46 @@
             </div>
         </div>
         <div class="right">
-    
+            <p class="about">SERVICES</p>
+            <h2>know what we <br>
+            offer you</h2>
+
+            <div class="container-cards">
+                <div class="card-individual " style="background-color: #ececec; color: #1f273c;"> 
+                    <div class="icon">
+                        <div class="big-circle" style="border: 1px dotted grey;"></div>
+                        <div class="sm-circle" style="background-color: #fb5e27;"></div>
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <p class="title">Interior<br>Design</p>
+                    <p class="text">We design the best interiors<br>
+                        for your home full of styles<br>
+                        and confort.</p>
+                </div>
+                <div class="card-individual" style="background-color: #fb5e27;"> 
+                    <div class="icon">
+                        <div class="big-circle" ></div>
+                        <div class="sm-circle" style="background-color: #fff;"></div>
+                        <i class="fas fa-wrench" style="color: #1f273c;"></i>
+                    </div>
+                    <p class="title">Plumbing</p>
+                    <p class="text">We help you repair your <br>
+                    plumbing. Our service is of<br>
+                    quality.</p>
+
+                </div>
+                <div class="card-individual" style="background-color: #1f273c;"> 
+                    <div class="icon">
+                        <div class="big-circle"></div>
+                        <div class="sm-circle" style="background-color: #fff; opacity: 0.15;"></div>
+                        <i class="fas fa-paint-roller" style="color: #fb5e27;"></i>
+                    </div>
+                    <p class="title">Painting</p>
+                    <p class="text">Painting ypur house is a task<br>
+                        that we can do for you, in a<br>
+                        short time.</p>
+                </div>
+            </div>
         </div>
     </div>
     

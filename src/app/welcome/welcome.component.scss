@@ -97,5 +97,8 @@ $font-color:#1f273c;
         .last{
             margin-bottom: 0;
         }
+        &:hover{
+            cursor: default;
+        }
     }
 }
