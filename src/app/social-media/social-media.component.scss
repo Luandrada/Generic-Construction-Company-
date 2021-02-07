@@ -44,6 +44,9 @@ $font-color:#1f273c;
                         cursor: default;
                     }
                 }
+                &:hover{
+                    cursor: default;
+                }
             }
             .right{
                 margin-top: 20px;
@@ -77,6 +80,9 @@ $font-color:#1f273c;
                     font-weight: 600;
                     color: #fff;
                     font-size: 18px;
+                    &:hover{
+                        cursor: default;
+                    }
                 }
             }
         }

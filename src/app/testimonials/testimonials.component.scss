@@ -54,35 +54,70 @@ $font-color:#1f273c;
            display: flex;
            justify-content: center;
            align-items: center;
+           position: relative;
+           .cont-carousel{
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 320px;
+                height: 320px;
+                opacity: 0.85;
+            }
+            .white{
+                width: 70%;
+                background-color: #fff;
+                margin-top: -16px;
+                position: relative;
+                border-radius: 5px;
+                height: 37px;
+                .name{
+                    font-family: $font-sec;
+                    color: $orange;
+                    display: block;
+                    margin-top: 8px;
+                    font-style: italic;
+                    font-size: 15px;
+                    font-weight: 700;
+                    text-align: center;
+                }
+            }
+            .dots{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 59px;
+                margin-top: 10px;
+                .dot{
+                    width: 9px;
+                    height: 9px;
+                    border-radius: 100%;
+                    background-color: #fff;
+                    border: 2px solid rgba(128, 128, 128, 0.63);
+                }
+            }
+            }
+            .button{
+                background-color: $orange;
+                width: 95px;
+                height: 95px;
+                border-radius: 100%;
+                position: absolute;
+                top: 40%;
+                .fa-play{
+                    color: #fff;
+                    font-size: 2.2em;
+                    margin-left: 36px;
+                    margin-top: 30px;
+                }
+                &:hover{
+                    cursor: pointer;
+                }
+            }
        }
     }
 }
 
-.carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    margin-top: 50px;
-    border: 2px solid grey;
-    }
-.carousel-indicators{
-    transform: translateY(60px);
-}
-.active{
-    background-color: orange !important;
-}
-.carousel-item{
-    position: relative;
-    .name{
-        position: absolute;
-        z-index: 10000000;
-        bottom: -15px;
-       background-color: #fff;
-       border-radius: 5px;
-       margin-left: auto;
-       margin-right: auto;
-       width: 80%;
-       height: 30px;
 
-    }
-}

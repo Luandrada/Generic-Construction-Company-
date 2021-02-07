@@ -11,6 +11,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { OurProjectsComponent } from './our-projects/our-projects.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SocialMediaComponent } from './social-media/social-media.component';
     AboutUsComponent,
     OurProjectsComponent,
     TestimonialsComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

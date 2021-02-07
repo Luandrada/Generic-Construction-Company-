@@ -125,7 +125,7 @@ $font-color:#1f273c;
             .container-cards{
                 display: flex;
                 flex-direction: column;
-                width: 77%;
+                width: 100%;
                 border: none;
                 .card-individual{
                     height: 140px;
@@ -189,4 +189,18 @@ $font-color:#1f273c;
             }
         }
     }
+}
+
+.carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    margin-top: 50px;
+    border: 2px solid grey;
+    }
+.carousel-indicators{
+    transform: translateY(45px);
+}
+.active{
+    background-color: $orange !important;
 }

@@ -126,6 +126,15 @@ $font-color:#1f273c;
                     border-bottom: 4px solid $orange;
                     color: $orange;
                 }
+                a{
+                    text-decoration: none;
+                    &:link{
+                        color: $font-color;
+                    }
+                    &:active{
+                        color: $font-color;
+                    }
+                }
             }
         }
         
