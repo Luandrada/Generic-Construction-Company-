@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormReservationComponent } from './principal/form-reservation/form-reservation.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { OurProjectsComponent } from './our-projects/our-projects.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     PrincipalComponent,
     FormReservationComponent,
     WelcomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    OurProjectsComponent
   ],
   imports: [
     BrowserModule,
