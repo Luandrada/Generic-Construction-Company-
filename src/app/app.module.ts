@@ -9,6 +9,7 @@ import { FormReservationComponent } from './principal/form-reservation/form-rese
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { OurProjectsComponent } from './our-projects/our-projects.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { OurProjectsComponent } from './our-projects/our-projects.component';
     FormReservationComponent,
     WelcomeComponent,
     AboutUsComponent,
-    OurProjectsComponent
+    OurProjectsComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
