@@ -134,6 +134,9 @@ $font-color:#1f273c;
                     &:active{
                         color: $font-color;
                     }
+                    &:visited{
+                        color: $font-color;
+                    }
                 }
             }
         }
