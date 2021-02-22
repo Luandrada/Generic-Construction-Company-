@@ -120,4 +120,174 @@ $font-color:#1f273c;
     }
 }
 
+@media only screen and  (max-width: 500px) {
 
+    .bg{
+        min-height: 100vh;
+        padding-top: 0px;
+        .contenido{
+            width: 100%;
+            height: fit-content;
+            flex-direction: column;
+            margin-top: -80px;
+           .left{
+               width: 90%;
+               margin-left: auto;
+               margin-right: auto;
+               height: fit-content;
+               margin-top: 35px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+               
+            h2{
+                font-weight: 600;
+                font-size: 32px;
+                margin-bottom: 20px;
+               
+            }
+           }
+           .right{
+               width: 90%;
+               margin-left: auto;
+               margin-right: auto;
+               padding-top: 30px;
+               padding-bottom: 35px;
+               .cont-carousel{
+                width: 250px;
+                img{
+                    width: 250px;
+                    height: 250px;
+                }
+                }
+                .button{
+                    width: 70px;
+                    height: 70px;
+                    top: 34%;
+                    .fa-play{
+                        color: #fff;
+                        font-size: 2em;
+                        margin-left: 24px;
+                        margin-top: 19px;
+                    }
+                }
+           }
+        }
+    }
+
+}
+
+@media only screen and  (min-width: 501px) and  (max-width: 800px) {
+    .bg{
+        .contenido{
+            width: 100%;
+            height: 100vh;
+           background-image: url('../../assets/img/bg_1.jpg');
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: cover;
+           display: flex;
+           .left{
+               margin-left: 5%;
+               width: 45%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+               .about{
+                color: #fff;
+                font-family: $font-sec;
+                font-weight: 400;
+                letter-spacing: 0px;
+                font-size: 12px;
+                display: block;
+                margin-bottom: -2px;
+                text-align: center;
+                &:hover{
+                    cursor: default;
+                }
+            }
+            h2{
+                font-family: $font-sec;
+                font-weight: 700;
+                color: #fff;
+                font-size: 42px;
+                text-align: center;
+                margin-bottom: 20px;
+                &:hover{
+                    cursor: default;
+                }
+            }
+           }
+           .right{
+               width: 50%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               position: relative;
+               .cont-carousel{
+                width: 320px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 320px;
+                    height: 320px;
+                    opacity: 0.85;
+                }
+                .white{
+                    width: 70%;
+                    background-color: #fff;
+                    margin-top: -16px;
+                    position: relative;
+                    border-radius: 5px;
+                    height: 37px;
+                    .name{
+                        font-family: $font-sec;
+                        color: $orange;
+                        display: block;
+                        margin-top: 8px;
+                        font-style: italic;
+                        font-size: 15px;
+                        font-weight: 700;
+                        text-align: center;
+                    }
+                }
+                .dots{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 59px;
+                    margin-top: 10px;
+                    .dot{
+                        width: 9px;
+                        height: 9px;
+                        border-radius: 100%;
+                        background-color: #fff;
+                        border: 2px solid rgba(128, 128, 128, 0.63);
+                    }
+                }
+                }
+                .button{
+                    background-color: $orange;
+                    width: 95px;
+                    height: 95px;
+                    border-radius: 100%;
+                    position: absolute;
+                    top: 40%;
+                    .fa-play{
+                        color: #fff;
+                        font-size: 2.2em;
+                        margin-left: 36px;
+                        margin-top: 30px;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+           }
+        }
+    }
+}

@@ -102,3 +102,185 @@ $font-color:#1f273c;
         }
     }
 }
+
+
+@media only screen and  (max-width: 500px) {
+    .container-welcome{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        .left{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            img{
+                width: 80%;
+                height: 400px;
+                margin-left:10% ;
+                
+            }
+            .hammer{
+                display: none;
+            }
+        }
+        .right{
+            width: 90%;
+            padding-left: 65px;
+            .welcome{
+                font-size: 13px;
+                margin-bottom: 0px;
+                margin-top: 25px;
+            }
+            h2{
+                font-size:39px;
+                margin-bottom: 20px;
+              
+            }
+            .text{
+                font-weight: 600;
+                font-size: 18px;  
+                margin-left: 2px;
+                margin-bottom: 30px;
+            }
+            .card{
+                align-items: center;
+                justify-content: space-between;
+                width: 80%;
+                min-width: 200px;
+                margin-left: auto; 
+                margin-right: auto;       
+                margin-bottom: 15px;
+                border: none;
+                p{
+                    font-size: 17px;
+                    font-weight: 600; 
+                }
+                img{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 5px
+                }
+            }
+            .last{
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+}
+
+@media only screen and  (min-width: 501px) and  (max-width: 800px) {
+    .container-welcome{
+        width: 90%;
+        padding-top: 30px;
+        .left{
+            width: 50%;
+            position: relative;
+            img{
+                width: 80%;
+                height: 450px;
+                margin-left:20% ;
+                
+            }
+            .hammer{
+                left: 92.5%;
+                top: 28%;
+               
+            }
+        }
+        .right{
+            padding-left: 45px;
+            margin-top: -40px;
+            .welcome{
+                font-size: 13px;
+                margin-bottom: 0px;
+            }
+            h2{
+                font-size: 39px;
+                margin-bottom: 20px;
+            }
+            .text{
+                font-size: 16px;  
+                margin-bottom: 30px;
+            }
+            .card{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 49%;
+                min-width: 200px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                p{
+                    font-family: $font-ppal;
+                    color: $font-color;
+                    font-weight: 700; 
+                }
+                img{
+                    width: 70px;
+                    height: 70px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and  (min-width: 1001px) and  (max-width: 1300px) {
+    .container-welcome{
+        width: 90%;
+        padding-top: 20px;
+        .left{
+            width: 50%;
+            position: relative;
+            img{
+                width: 85%;
+                height: 500px;
+                margin-left:15% ;
+                
+            }
+            .hammer{
+                top: 43%;
+               
+            }
+        }
+        .right{
+            padding-left: 45px;
+            margin-top: -40px;
+            
+            h2{
+                font-size: 41px;
+            }
+            .text{
+                font-size: 17px;  
+            }
+            .card{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 49%;
+                min-width: 200px;
+                margin-left: 50px;
+                margin-bottom: 10px;
+                p{
+                    font-family: $font-ppal;
+                    color: $font-color;
+                    font-weight: 700; 
+                }
+                img{
+                    width: 75px;
+                    height: 75px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+}

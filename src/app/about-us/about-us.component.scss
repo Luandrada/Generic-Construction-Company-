@@ -204,3 +204,173 @@ $font-color:#1f273c;
 .active{
     background-color: $orange !important;
 }
+
+@media only screen and  (max-width: 500px) {
+    .carousel{
+        width: 90% !important;
+    }
+    .bg{
+        margin-top: 0px;
+        padding-top: 30px;
+        height: fit-content;
+        .cont{
+            width: 90%;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            .left{
+                width: 95%;
+                h2{
+                    font-weight: 600;
+                    font-size: 39px;
+                    margin-bottom: 15px;
+                }
+                .subtitle{
+                    font-size: 18px;
+                }
+                .cont-buttons{
+                    .change{
+                        font-size:13px;
+                    }
+                }
+                .description{
+                    border-radius: 5px;
+                    border: 1px solid rgb(235, 235, 235);
+                    margin-top: 5px;
+                    padding: 10px 15px 5px 15px;
+                    p{
+                       font-size: 14px;
+                    }
+                }
+                .cont-btn{
+                    margin-top: -20px;
+                    margin-bottom: 20px;
+                }
+                
+            }
+            .right{
+                width: 95%;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 25px;
+                h2{
+                    font-weight: 600;
+                    font-size: 39px;
+                    margin-bottom: 20px;
+                }
+                .container-cards{
+                    .card-individual{
+                        height: 120px;
+                        width: 100%;
+                        display: grid;
+                        padding: 20px 7px 9px 10px;
+                      
+                        .title{
+                            font-size: 13px;
+                            display: block;
+                            margin-top: -8px;
+                        }
+                        .text{
+                            font-size: 12px;
+                            line-height: 17px;
+                            margin-top: -5px;
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+}
+@media only screen and  (min-width: 501px) and  (max-width: 800px) {
+    
+.bg{
+    padding-top: 25px;
+    height: fit-content;
+    .cont{
+        width: 90%;
+        .left{
+            width: 55%;
+            padding-left: 40px;
+            padding-right: 50px;
+            h2{
+                font-size: 39px;
+                margin-bottom: 20px;
+            }
+            .subtitle{
+                font-size: 14px;
+            }            
+        }
+        .right{
+            width: 45%;
+            padding-left: 35px;
+            h2{
+                font-size: 39px;
+            }
+            .container-cards{
+                .card-individual{
+                    height: 140px;
+                    width: 100%;
+                    padding: 15px 15px 25px 20px;
+                   
+                    .title{
+                        display: block;
+                        margin-top: -7px;
+                        font-size: 13px;
+                        line-height: 14px;
+                    }
+                    .text{
+                        font-size: 13px;
+                        line-height: 17px;
+                        margin-top: -5px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+@media only screen and  (min-width: 1001px) and  (max-width: 1300px) {
+        
+.bg{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: fit-content;
+    .cont{
+        width: 95%;
+        .left{
+            h2{
+                font-size: 41px;
+                margin-bottom: 20px;
+            }          
+        }
+        .right{
+            width: 45%;
+            padding-left: 35px;
+            h2{
+                font-size: 41px;
+            }
+            .container-cards{
+                .card-individual{
+                    height: 140px;
+                    width: 100%;
+                    padding: 15px 15px 25px 20px;
+                   
+                    .title{
+                        display: block;
+                        margin-top: -7px;
+                        font-size: 13px;
+                        line-height: 14px;
+                    }
+                    .text{
+                        font-size: 13px;
+                        line-height: 17px;
+                        margin-top: -5px;
+                    }
+                }
+            }
+        }
+    }
+}
+}

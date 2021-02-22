@@ -24,8 +24,20 @@
                 <p class="info">Call Us Now 24/7 Customer Support</p>
             </div>
         </div>
-        <div class="menu">
-            <div class="container-menu">
+        <div class="menu"  (click)="openMenu()">
+            <!-- mobile -->
+            <img class="logo" src="../../assets/img/LOGO-many.png" alt="">
+            <i class="fas fa-bars" id="menu" ></i>
+            <i class="fas fa-times"  id="close" ></i>
+            <div class="container-menu-mobile" id="options" >
+                <p class="nav-option"> HOME</p>
+                <p class="nav-option"> <a href="#about-us">ABOUT US</a></p>
+                <p class="nav-option"><a href="#about-us">SERVICES</a></p>
+                <p class="nav-option"><a href="#gallery">GALLERY</a></p>
+                <p class="nav-option"><a href="#contact-us">CONTACT US</a></p>
+            </div>
+            <!-- fin mobile -->
+            <div class="container-menu" id="me"  >
                 <p class="nav-option"> HOME</p>
                 <p class="nav-option"> <a href="#about-us">ABOUT US</a></p>
                 <p class="nav-option"><a href="#about-us">SERVICES</a></p>

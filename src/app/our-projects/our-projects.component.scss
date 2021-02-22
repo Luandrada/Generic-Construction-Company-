@@ -67,3 +67,34 @@ $font-color:#1f273c;
     }
     
 }
+
+@media only screen and  (max-width: 500px) {
+    #none-mobile{
+        display: none;
+    }
+   
+    .container-imgs{
+        display: grid  !important;
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr !important;
+        img{
+            width: 120px  !important;
+            height: 120px !important;
+        }
+    }
+    .centrar{
+        width: 95%;  
+        padding-bottom: 30px;     
+        h2{
+            font-weight: 600;
+            font-size: 39px;
+        }
+       
+        .cont-btn{
+            margin-top: -20px !important;
+            .btn{
+                margin-top: 25px;
+            }
+        }
+    }
+}
