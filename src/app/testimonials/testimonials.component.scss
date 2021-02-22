@@ -128,8 +128,10 @@ $font-color:#1f273c;
         .contenido{
             width: 100%;
             height: fit-content;
+            padding-bottom: 25px;
+            padding-top: 25px;
             flex-direction: column;
-            margin-top: -80px;
+            margin-top: 0px;
            .left{
                width: 90%;
                margin-left: auto;

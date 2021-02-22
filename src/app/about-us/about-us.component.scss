@@ -213,6 +213,7 @@ $font-color:#1f273c;
         margin-top: 0px;
         padding-top: 30px;
         height: fit-content;
+        padding-bottom: 40px;
         .cont{
             width: 90%;
             flex-direction: column;
@@ -250,10 +251,11 @@ $font-color:#1f273c;
             }
             .right{
                 width: 95%;
-                margin-top: 20px;
+                margin-top: 40px;
                 margin-left: auto;
                 margin-right: auto;
                 padding-bottom: 25px;
+                margin-bottom: 15px
                 h2{
                     font-weight: 600;
                     font-size: 39px;
@@ -287,6 +289,7 @@ $font-color:#1f273c;
     
 .bg{
     padding-top: 25px;
+    padding-bottom: 25px;
     height: fit-content;
     .cont{
         width: 90%;
